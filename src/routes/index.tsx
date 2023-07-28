@@ -15,11 +15,11 @@ export const AppRouter = () => {
       },
       {
          path: '/app',
-         element: <Home />,
+         element: <LayoutMain />,
          children: [
             {
                path: 'message',
-               element: <h1>Chat message!</h1>
+               element: <LayoutMessage />
             }
          ]
       }
