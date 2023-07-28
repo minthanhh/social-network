@@ -6,48 +6,49 @@ import { AiOutlineLike, AiOutlineShareAlt } from 'react-icons/ai';
 import { FaRegCommentDots } from 'react-icons/fa';
 import Image from '@/components/Post/Image';
 import AuthorInfo from '@/components/Post/AuthorInfo';
+import { Theme, Button } from 'react-daisyui'
 
 const Home = () => {
    const stories = [
       {
          nickName: 'minhhthanh',
          avatar:
-            'https://scontent.cdninstagram.com/v/t51.2885-19/300622229_598549055189336_4441115838058321556_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=108&_nc_ohc=L38RmGf5FzsAX9hBmDA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfCo1ZeH-LsqWUDaoqDNt4Hs_M3kgoLGgpsTHdVmn0-P-Q&oe=64B7BE89&_nc_sid=10d13b',
+            'https://res.cloudinary.com/dgyk7uloc/image/upload/v1689756010/64b7a1663e373edb9fcfa24d.jpg',
       },
       {
          nickName: 'trungxinhgai',
          avatar:
-            'https://scontent.cdninstagram.com/v/t51.2885-19/300622229_598549055189336_4441115838058321556_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=108&_nc_ohc=L38RmGf5FzsAX9hBmDA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfCo1ZeH-LsqWUDaoqDNt4Hs_M3kgoLGgpsTHdVmn0-P-Q&oe=64B7BE89&_nc_sid=10d13b',
+            'https://res.cloudinary.com/dgyk7uloc/image/upload/v1689065442/64ad17e140e9b8d70c439b0b.jpg',
       },
       {
          nickName: 'minhhthanh',
          avatar:
-            'https://scontent.cdninstagram.com/v/t51.2885-19/300622229_598549055189336_4441115838058321556_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=108&_nc_ohc=L38RmGf5FzsAX9hBmDA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfCo1ZeH-LsqWUDaoqDNt4Hs_M3kgoLGgpsTHdVmn0-P-Q&oe=64B7BE89&_nc_sid=10d13b',
+            'https://res.cloudinary.com/dgyk7uloc/image/upload/v1688963237/64ab88a293b6979af7ef175c.jpg',
       },
       {
          nickName: 'minhhthanh',
          avatar:
-            'https://scontent.cdninstagram.com/v/t51.2885-19/300622229_598549055189336_4441115838058321556_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=108&_nc_ohc=L38RmGf5FzsAX9hBmDA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfCo1ZeH-LsqWUDaoqDNt4Hs_M3kgoLGgpsTHdVmn0-P-Q&oe=64B7BE89&_nc_sid=10d13b',
+            'https://res.cloudinary.com/dgyk7uloc/image/upload/v1688963237/64ab88a293b6979af7ef175c.jpg',
       },
       {
          nickName: 'minhhthanh',
          avatar:
-            'https://scontent.cdninstagram.com/v/t51.2885-19/300622229_598549055189336_4441115838058321556_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=108&_nc_ohc=L38RmGf5FzsAX9hBmDA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfCo1ZeH-LsqWUDaoqDNt4Hs_M3kgoLGgpsTHdVmn0-P-Q&oe=64B7BE89&_nc_sid=10d13b',
+            'https://res.cloudinary.com/dgyk7uloc/image/upload/v1688759120/64a86b4da5dd0cf5e88ceb64.jpg',
       },
       {
          nickName: 'minhhthanh',
          avatar:
-            'https://scontent.cdninstagram.com/v/t51.2885-19/300622229_598549055189336_4441115838058321556_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=108&_nc_ohc=L38RmGf5FzsAX9hBmDA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfCo1ZeH-LsqWUDaoqDNt4Hs_M3kgoLGgpsTHdVmn0-P-Q&oe=64B7BE89&_nc_sid=10d13b',
+            'https://res.cloudinary.com/dgyk7uloc/image/upload/v1688964154/64ab8c38e6b6fee983df6564.jpg',
       },
       {
          nickName: 'minhhthanh',
          avatar:
-            'https://scontent.cdninstagram.com/v/t51.2885-19/300622229_598549055189336_4441115838058321556_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=108&_nc_ohc=L38RmGf5FzsAX9hBmDA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfCo1ZeH-LsqWUDaoqDNt4Hs_M3kgoLGgpsTHdVmn0-P-Q&oe=64B7BE89&_nc_sid=10d13b',
+            'https://res.cloudinary.com/dgyk7uloc/image/upload/v1688963438/64ab896b45c55bd458bca663.jpg',
       },
    ];
 
    return (
-      <div className="flex-shrink-1 h-full w-3/5 flex-1 flex-col overflow-y-auto px-6">
+      <div data-theme="luxury" className="flex-shrink-1 h-full w-3/5 flex-1 flex-col overflow-y-auto px-6">
          <div className="mx-auto w-4/5 min-w-0">
             <div className="mt-10 flex items-center justify-between">
                <h3 className="mb-4 text-2xl font-black text-black">Stories</h3>
@@ -64,6 +65,22 @@ const Home = () => {
                      nickName={story.nickName}
                   />
                ))}
+            </div>
+            <div>
+            <button className="btn btn-outline btn-info">Info</button>
+            <button className="btn btn-outline btn-success">Success</button>
+            <button className="btn btn-outline btn-warning">Warning</button>
+            <button className="btn btn-outline btn-error">Error</button>
+
+            </div>
+            <div className='p-8'>
+                     <Theme dataTheme="dark">
+               <Button color="primary">Click me, dark!</Button>
+               </Theme>
+
+               <Theme dataTheme="light">
+               <Button color="secondary">Click me, light!</Button>
+               </Theme>
             </div>
             <div className="mt-10 flex flex-col">
                <HeadingAction label="Feeds">
