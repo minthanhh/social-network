@@ -9,8 +9,11 @@ import {
    SendIcon,
 } from '@/assets';
 import Action from '../Action/Action';
+import { onOpen } from '@/store/slices/modalSlice';
+import { useAppDispatch } from '@/hooks';
 
 const Header = () => {
+   const dispatch = useAppDispatch();
    const actions = [
       {
          icon: HeartIcon,
@@ -50,6 +53,7 @@ const Header = () => {
             <div className="ml-auto h-[40px] w-[40px] xl:w-auto">
                <button
                   id="gradient"
+                  onClick={() => dispatch(onOpen())}
                   className="relative flex h-full w-full items-center gap-[5px] rounded-[25px] px-5 py-[6px] text-white"
                >
                   <img

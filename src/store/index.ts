@@ -1,10 +1,12 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import modalReducer from "./slices/modalSlice";
 
-
-const RootReducer = combineReducers({})
+const rootReducer = combineReducers({
+    modal: modalReducer
+})
 
 const store = configureStore({
-    reducer: RootReducer
+    reducer: rootReducer
 })
 
 export type RootState = ReturnType<typeof store.getState>

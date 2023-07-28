@@ -38,7 +38,7 @@ const Sidebar = () => {
    ];
 
    return (
-      <div className="h-full w-[20%] bg-white shadow-md">
+      <div className="sticky h-full w-[20%] bg-white shadow-sm">
          <div className="mt-[30px] flex flex-col justify-center gap-[10px] border-b border-[#999999] px-[15px] pb-[10px] text-center">
             <div className="flex flex-col items-center gap-1">
                <div className="flex h-[100px] w-[100px] items-center justify-center rounded-full bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
